@@ -566,6 +566,28 @@ background-color: #fff;
   transition:  0.5s;
 
 }
+.hidee a.link i{
+  transition: 0.5s;
+}
+.hidee a.link{
+  transition: 0.5s;
+}
+
+.hidee a.link:hover{
+  border-radius: 50%;
+  background-color: transparent;
+
+
+}
+.hidee a.link:hover i{
+color: #fff;
+transform: scale(1.1);
+border-radius: 50%;
+font-size: small;
+border: none;
+box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 1.5px 1.5px;
+
+}
 .hidee .box{
 height: 85%;
 
