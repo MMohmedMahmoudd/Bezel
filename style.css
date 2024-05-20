@@ -556,9 +556,50 @@ outline-color:#000 ;
 background-color: #fff;
 } 
 /* ___________team__________ */
+#Team{
+  height:40rem ;
+}
+@keyframes scrolltop {
+  0%{
+transform: translateY(300px);
+opacity: 0;
+  }
+  30%{
+    opacity: 0.3;
+  }
+  60%{
+    opacity: 0.6;
+  }
+  90%{
+    opacity: 0.9;
+  }
+
+}
+.card.scrolltop{
+  animation-name: scrolltop;
+  animation-duration: 1s;
+
+}
+.card.two{
+  animation-duration: 1.8s;
+}
+.card.three{
+  animation-duration: 2.6s;
+}
+.card.four{
+  animation-duration: 3.4s;
+}
 .card{
   border: none;
+  position: relative;
+  animation-duration: 1s;
 }
+.card.scrolltop{
+  animation-name: scrolltop;
+  animation-duration: 1s;
+
+}
+
 .hidee{
   transform: translateY(100px);
   background-color: rgba(0, 195, 218, 0.9);
@@ -635,11 +676,14 @@ h2::after{
   top: 15%;
   z-index: -1;
 }
-
+section.Services{
+  height: 50rem;
+  background-color:rgb(99, 98, 98);
+}
 section.SERVICES .row {
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap;
   column-gap: 2.5rem;
-  row-gap: 3rem;
+  row-gap: 3rem; */
 }
 .row .feature{
   background-color: #fff;
@@ -795,10 +839,10 @@ section.caro h3{
 
 
 @media(max-width:991px){
-.SERVICES .row{
+/* .SERVICES .row{
 
 flex-wrap: wrap !important;
-}
+} */
 .PORTFOLIO .row{
   flex-wrap: wrap !important;
 
