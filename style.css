@@ -375,7 +375,7 @@ transform: translateX(0);
 }
 /*  _________________about_________*/
 section.About{
-  height: 50rem;
+  height: 30rem;
   /* overflow: hidden; */
 }
 .about-text h5{
@@ -477,13 +477,49 @@ color: #fff !important;
 outline-color:#000 ;
 background-color: #fff;
 } 
-
-/* team -------------------------------------- */
-#Team{
-  height: 10rem;
+/* ___________team__________ */
+.card{
+  border: none;
 }
-/* /* ______service_____________ */
+.hidee{
+  transform: translateY(100px);
+  background-color: rgba(0, 195, 218, 0.9);
+  opacity: 0;
+  transition:  0.5s;
 
+}
+.hidee .box{
+height: 85%;
+
+}
+.w-90{
+  width: 90%;
+}
+.up-logo i{
+  font-size: 14px;
+
+}
+.card:hover .hidee{
+opacity: 1;
+transform: translateY(0);
+}
+.text-down h6{
+  font-size: 14px;
+  font-weight: 600;
+}
+.text-down p{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+/* ___________end team_______________ */
+/* _________________service______________ */
 h2{
   z-index: 1;
 }

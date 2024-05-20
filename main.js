@@ -188,6 +188,8 @@ window.addEventListener('scroll', () => {
 
     if (currentScrollPos === 0) {
         navbar.style.backgroundColor = "transparent";
+        navbar.style.borderBottom = "0.5px solid #888888";
+
         Array.from(navLinks).forEach(link => {
             link.style.color = "white"; 
         });
@@ -204,6 +206,8 @@ window.addEventListener('scroll', () => {
         brand.innerHTML = '<img class="w-50" src="Bezel _ Creative Multi-Purpose HTML Template_2/Bezel _ Creative/logo-dark.png" alt="Dark Logo">';
     } else {
         navbar.style.backgroundColor = "white";
+        navbar.style.border = "none";
+
         Array.from(navLinks).forEach(link => {
             link.style.color = "black"; 
         });
