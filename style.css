@@ -560,32 +560,6 @@ background-color: #fff;
 #Team{
   height: 40rem;
 }
-@media(max-width:764px){
-  #Team{
-    height: 150rem !important;
-  }
-  section.Pricing{
-    height: 144rem  !important;
-  }
-  section.Services{
-    height: 52rem !important;
-
-  }
-  section.About{
-    height: 40rem;
-  }
-  section.Services .container{
-    height: 52rem !important;
-
-  }
-  .Pricing .card.gold{
-    transform: translateY(0);
-  }
-  .PORTFOLIO{
-    height: 155rem !important;
-  }
-  
-}
 @keyframes scrolltop {
   0%{
 transform: translateY(300px);
@@ -1044,5 +1018,37 @@ h1, h2, h3, h4, h5, h6, .logo{
     text-align: center;
   }
 
+
+}
+@media(max-width:764px){
+  #Team{
+    height: 150rem !important;
+  }
+  section.Pricing{
+    height: 144rem  !important;
+  }
+  section.Services{
+    height: 52rem !important;
+
+  }
+  section.About{
+    height: 40rem;
+  }
+  section.Services .container{
+    height: 52rem !important;
+
+  }
+  .Pricing .card.gold{
+    transform: translateY(0);
+  }
+  .PORTFOLIO{
+    height: 155rem !important;
+  }
+  
+}
+@media(min-width:765px) and (max-width:991px){
+  #Team{
+    height: 63rem !important;
+  }
 
 }
