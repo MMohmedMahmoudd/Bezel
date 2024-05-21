@@ -403,6 +403,7 @@ transform: translateX(0);
   padding-block: 0.7rem;
 
 }
+
 .carousel-item .parent-btn a.shin:hover::after{
   animation: shine;
 }
@@ -557,7 +558,7 @@ background-color: #fff;
 } 
 /* ___________team__________ */
 #Team{
-  height:40rem ;
+  height: 80rem;
 }
 @keyframes scrolltop {
   0%{
@@ -636,6 +637,9 @@ height: 85%;
 .w-90{
   width: 90%;
 }
+.h-90{
+  height: 90%;
+}
 .up-logo i{
   font-size: 14px;
 
@@ -652,8 +656,22 @@ transform: translateY(0);
   font-size: 13px;
   font-weight: 400;
 }
+section.dark{
+  height: 35rem;
+  background-color:rgb(99, 98, 98);
+  width: 100%;
+}
+section.dark .container{
+  height: 40rem;
 
-
+}
+.dark h6{
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 
 
 
@@ -661,29 +679,73 @@ transform: translateY(0);
 
 /* ___________end team_______________ */
 /* _________________service______________ */
-h2{
-  z-index: 1;
+.Services .card{
+  height: 30rem;
 }
-h2::after{
-  content: "";
-  background: url(imgs/imgs/dots.png);
+.Services .card h5{
+  font-size: 50px;
+}
+.card .center{
+  background-color: #fff;
+}
+
+.card h5 span{
+  font-size: 16px;
+  vertical-align: top;
+}
+.Services h2[data-bigletter]::before{
+  z-index: 0;
+  content: attr(data-bigletter);
+  font-size: 2em;
+  opacity: .06;
   position: absolute;
-  background-position: center center;
-  background-repeat: repeat;
-  width: 98%;
-  height: 90%;
-  left: 6%;
-  top: 15%;
-  z-index: -1;
+  top: -0.5em;
+  left: 40%;
+  text-align: start;
+  text-transform: uppercase;
 }
 section.Services{
-  height: 50rem;
-  background-color:rgb(99, 98, 98);
+  height: 60rem;
+}
+span.best{
+  background-color: rgba(0, 195, 218, 0.9);
+  color: #fff;
+  font-size: 12px;
+}
+h5.gold{
+  color: rgba(0, 195, 218, 0.9);
+}
+.h-80{
+  height: 80%;
+}
+.card.gold{
+  height: 33rem;
+  transform: translateY(-25px);
 }
 section.SERVICES .row {
   /* flex-wrap: nowrap;
   column-gap: 2.5rem;
   row-gap: 3rem; */
+}
+.list ul{
+  list-style: none;
+}
+.list li{
+
+}
+.fadeInRight{
+  
+}
+.parent-info h4[data-bigletter]::before{
+  z-index: 0;
+  content: attr(data-bigletter);
+  font-size: 2em;
+  opacity: .06;
+  position: absolute;
+  top: -0.5em;
+  left: -1.5%;
+  text-align: start;
+  text-transform: uppercase;
 }
 .row .feature{
   background-color: #fff;
@@ -801,7 +863,12 @@ section#Works ul li button{
   color: #000;
   border-bottom: 3px solid var(--bs-emphasis-color);
     }
+  .center a.shin{
+    background-color: #00c3da;
+    color: #fff;
+    padding-block: 0.7rem;
   
+  }
 
 
 /* _________________________work__________ */
