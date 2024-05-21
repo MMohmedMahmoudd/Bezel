@@ -558,7 +558,30 @@ background-color: #fff;
 } 
 /* ___________team__________ */
 #Team{
-  height: 80rem;
+  height: 40rem;
+}
+@media(max-width:764px){
+  #Team{
+    height: 159rem !important;
+  }
+  section.Pricing{
+    height: 144rem  !important;
+  }
+  section.Services{
+    height: 52rem !important;
+
+  }
+  section.Services .container{
+    height: 52rem !important;
+
+  }
+  .Pricing .card.gold{
+    transform: translateY(0);
+  }
+  .PORTFOLIO{
+    height: 155rem !important;
+  }
+  
 }
 @keyframes scrolltop {
   0%{
@@ -656,16 +679,18 @@ transform: translateY(0);
   font-size: 13px;
   font-weight: 400;
 }
-section.dark{
+section.parent{
   height: 35rem;
   background-color:rgb(99, 98, 98);
   width: 100%;
 }
-section.dark .container{
+section.Services{
   height: 40rem;
+  background-color:rgb(99, 98, 98);
+
 
 }
-.dark h6{
+.Services h6{
   font-size: 13px;
   letter-spacing: 0.1em;
   font-family: "Poppins", sans-serif;
@@ -679,10 +704,10 @@ section.dark .container{
 
 /* ___________end team_______________ */
 /* _________________service______________ */
-.Services .card{
+.Pricing .card{
   height: 30rem;
 }
-.Services .card h5{
+.Pricing .card h5{
   font-size: 50px;
 }
 .card .center{
@@ -693,7 +718,7 @@ section.dark .container{
   font-size: 16px;
   vertical-align: top;
 }
-.Services h2[data-bigletter]::before{
+.Pricing h2[data-bigletter]::before{
   z-index: 0;
   content: attr(data-bigletter);
   font-size: 2em;
@@ -704,7 +729,7 @@ section.dark .container{
   text-align: start;
   text-transform: uppercase;
 }
-section.Services{
+section.Pricing{
   height: 60rem;
 }
 span.best{
@@ -722,19 +747,8 @@ h5.gold{
   height: 33rem;
   transform: translateY(-25px);
 }
-section.SERVICES .row {
-  /* flex-wrap: nowrap;
-  column-gap: 2.5rem;
-  row-gap: 3rem; */
-}
 .list ul{
   list-style: none;
-}
-.list li{
-
-}
-.fadeInRight{
-  
 }
 .parent-info h4[data-bigletter]::before{
   z-index: 0;
@@ -964,7 +978,7 @@ section.PORTFOLIO{
 /* ____6__ */
 /* _______________________clints______________ */
 section#Clients{
-  height: 20rem;
+  height: 35rem;
 }
 
 
