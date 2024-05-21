@@ -562,7 +562,7 @@ background-color: #fff;
 }
 @media(max-width:764px){
   #Team{
-    height: 159rem !important;
+    height: 150rem !important;
   }
   section.Pricing{
     height: 144rem  !important;
@@ -570,6 +570,9 @@ background-color: #fff;
   section.Services{
     height: 52rem !important;
 
+  }
+  section.About{
+    height: 40rem;
   }
   section.Services .container{
     height: 52rem !important;
