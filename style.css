@@ -465,6 +465,9 @@ section.About{
   position: relative;
   font-size: 50px;
 }
+button:hover span.but{
+color: white !important;
+}
 /* .text-last h6::before{
   content: "C";
   position: absolute;
@@ -558,7 +561,7 @@ background-color: #fff;
 } 
 /* ___________team__________ */
 #Team{
-  height: 40rem;
+  height: 45rem;
 }
 @keyframes scrolltop {
   0%{
@@ -918,9 +921,9 @@ section.show-animate{
 section.PORTFOLIO.show-animate{
   transform: translateY(0);
 }
-section.PORTFOLIO{
+/* section.PORTFOLIO{
   transform: translateY(100px);
-}
+} */
 /* ____2__ */
 section.About.show-animate{
   transform: translateY(0);
@@ -949,9 +952,9 @@ section.caro{
 section.PORTFOLIO.show-animate{
   transform: translateY(0);
 }
-section.PORTFOLIO{
+/* section.PORTFOLIO{
   transform: translateY(100px);
-}
+} */
 /* ____6__ */
 /* _______________________clints______________ */
 section#Clients{
@@ -1022,33 +1025,50 @@ h1, h2, h3, h4, h5, h6, .logo{
 }
 @media(max-width:764px){
   #Team{
-    height: 150rem !important;
+    height: auto !important;
   }
   section.Pricing{
-    height: 144rem  !important;
+    height: 150rem  !important;
   }
   section.Services{
-    height: 52rem !important;
+    height: 60rem !important;
 
   }
   section.About{
-    height: 40rem;
+    height: auto;
   }
   section.Services .container{
-    height: 52rem !important;
+    height: auto !important;
 
   }
   .Pricing .card.gold{
     transform: translateY(0);
   }
   .PORTFOLIO{
-    height: 155rem !important;
+    height: auto !important;
   }
   
 }
 @media(min-width:765px) and (max-width:991px){
   #Team{
-    height: 63rem !important;
+    height: auto !important;
+  }
+  section.Pricing{
+    height: 80rem  !important;
   }
 
+  .Pricing .card.gold{
+    transform: translateY(-16px);
+  }
+  .PORTFOLIO{
+    height: 70rem !important;
+  }
+
+
+
+}
+@media(min-width:992px) and (max-width:1399px){
+  #Team{
+    height: 40rem !important;
+  }
 }
