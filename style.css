@@ -361,12 +361,12 @@ h1.second{
   width:3rem;
   border-left: none;
 }
-.carousel-control-prev span.right{
+#Home .carousel-control-prev span.right{
   height: 3%;
   top: 50%;
   width: 3rem;
 }
-.carousel-control-prev.right{
+#Home .carousel-control-prev.right{
   height: 4%;
   top: 39%;
   width:3rem;
