@@ -145,7 +145,7 @@ ul.list-group::after{
   color: var(--bs-gray) !important;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-  color:var(--bs-gray) !important;
+  color:var(--bs-gray) !important ;
 }
 /* end style */
 body{
@@ -259,7 +259,7 @@ section.Home .carousel{
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 0;
  }
- .carousel-control-prev span.carousel-control-prev{
+#Home .carousel-control-prev span.carousel-control-prev{
   width: auto;
   right: 0;
 }
@@ -353,14 +353,16 @@ h1.second{
   top: 38%;
   width: 3rem;
 } */
-#Home button.carousel-control-prev{
+button.carousel-control-prev{
   height: 4%;
   bottom: 0;
   top: 35%;
   border: 1px solid #fff;
   width:3rem;
   border-left: none;
+
 }
+
 .carousel-control-prev span.right{
   height: 3%;
   top: 50%;
@@ -373,18 +375,18 @@ h1.second{
   bottom: 0;
   border-left: none;
 }
-#Home button.carousel-control-prev::before{
+.carousel-control-prev::before{
 content: "";
 position: absolute;
-left: 0;
+left: -10rem;
 width: 100%;
 height: 100%;
 background-color: #fff;
-transform: translateX(-100px);
+transform: translateX(-0px);
 transition: 0.5s;
-z-index: 0;
+z-index: 1;
 }
-#Home .carousel-control-prev:hover::before{
+.carousel-control-prev:hover::before{
 transform: translateX(0);
 }
 .carousel-control-prev:hover i.bi{
@@ -683,10 +685,6 @@ section.Services{
 /* _________________service______________ */
 .Pricing .card{
   height: 30rem;
-  -webkit-box-shadow: 0px 0px 28px 14px rgba(0,0,0,0.05);
-  -moz-box-shadow: 0px 0px 28px 14px rgba(0,0,0,0.05);
-  box-shadow: 0px 0px 28px 14px rgba(0,0,0,0.05);
-  
 }
 .Pricing .card h5{
   font-size: 50px;
@@ -873,9 +871,9 @@ section.caro{
   height: 40rem;
 }
 section.caro .carousel-inner{
-  height: 20rem;
+  height: 25rem;
 }
-.carousel-indicators button{
+#Pricing.carousel-indicators button{
   height: 1rem;
   width: 1rem;
   color: #333
@@ -890,29 +888,59 @@ section.caro h3{
   font-weight: 800;
   color: #333333;
 }
-section.caro img{
-  width: 100px;
-}
-#Pricing button.carousel-control-prev.end{
-  right: 0 !important;
-  color: #000;
-}
-#Pricing button.carousel-control-prev.start{
-  left:  0 !important;
-  color: #000;
-}
-#Pricing button span i.bi{
-  color: #000 !important;
-  font-size: 30px;
-}
-#Pricing button span i.bi:hover{
-  color: #00c3da !important;
+.image-caro img{
+  width: 150px;
+  position: relative;
+  z-index: 11;
+  top: -5rem;
+  transform: translateY(-10px);
 
 }
-#Pricing button.carousel-control-prev {
-  height: 5rem;
-  top: 50%;
+#Pricing button.carousel-control-prev.start{
+  height: 4rem !important;
+  bottom: 0 !important;
+  top: 35%;
+  width:3rem;
+  border-left: none;
+
 }
+#Pricing button.carousel-control-prev.end{
+  height: 4% !important;
+  bottom: 0 !important;
+  top: 35%;
+  width:3rem;
+  border-left: none;
+  right: 0;
+
+
+}
+#Pricing button.carousel-control-prev i{
+  color: #000 !important;
+}
+#Pricing .carousel-control-prev.start::before{
+  content: "";
+  position: absolute;
+  left: -10rem;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(-100px);
+  transition: 0.5s;
+  z-index: 0;
+  }
+#Pricing .carousel-control-prev.end::before{
+  content: "";
+  position: absolute;
+  right: -10rem;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateX(-100px);
+  transition: 0.5s;
+  z-index: 0;
+  }
+  
+
 /* _______end caro_____ */
 
 

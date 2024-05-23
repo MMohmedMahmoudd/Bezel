@@ -227,16 +227,6 @@ window.addEventListener('scroll', () => {
             sec.classList.remove('show-animate');
         }
     });
-        let up = window.scrollY;
-        let off = card.offsetTop - 100;
-        let tall = card.offsetHeight;
-
-        if (up >= off || up < off + tall) {
-            card.style.translateY="(300px)"
-        } 
-
-
-
     prevScrollPos = currentScrollPos;
 });
 // laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaast-------------
