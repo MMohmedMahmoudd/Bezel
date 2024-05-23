@@ -873,7 +873,7 @@ section.caro{
   height: 40rem;
 }
 section.caro .carousel-inner{
-  height: 20rem;
+  height: 37rem;
 }
 .carousel-indicators button{
   height: 1rem;
@@ -912,6 +912,18 @@ section.caro img{
 #Pricing button.carousel-control-prev {
   height: 5rem;
   top: 50%;
+}
+#Pricing .second .image-caro{
+position: relative;
+z-index: 10;
+top: 50px;
+}
+#Pricing .second{
+  z-index: 1;
+  overflow: visible;
+}
+#Pricing .Slider{
+  height: 25rem;
 }
 /* _______end caro_____ */
 
