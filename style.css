@@ -124,15 +124,19 @@ ul.navbar-nav .nav-link {
 .nav-masthead .nav-link:focus {
   cursor: pointer;
 }
-
+@media (min-width:991px) and (max-width:1200px){
+  nav.nav ul.list-group{
+    column-gap: 1.5rem !important;
+  }
+}
 ul.list-group::after{
   content: "";
   position: absolute;
-  height: 4.2rem;
+  height: 3.7rem;
   width:1px ;
   top: 0;
   right: 21.5%;
-  background-color:#888888;
+  background-color:#c2c2c2;
 
 }
 .container-fluid .first-text{
@@ -449,6 +453,12 @@ transform: translateX(0);
 .navbar-brand{
   color: #fff;
 }
+@media(max-width:900px){
+  a.navbar-brand img{
+    width: 75% !important;
+  }
+  }
+  
 /*  _________________about_________*/
 section.About{
   height: 30rem;

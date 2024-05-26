@@ -37,7 +37,7 @@ window.addEventListener('scroll', () => {
         Array.from(navLinks).forEach(link => {
             link.style.color = "black"; 
         });
-        brand.innerHTML = '<img class="w-50" src="Bezel _ Creative Multi-Purpose HTML Template_2/Bezel _ Creative/logo-dark.png" alt="Dark Logo">';
+        brand.innerHTML = '<img class="w-25" src="Bezel _ Creative Multi-Purpose HTML Template_2/Bezel _ Creative/logo-dark.png" alt="Dark Logo">';
     }
 
     let sections = document.querySelectorAll('section');
