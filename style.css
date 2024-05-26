@@ -858,7 +858,7 @@ section#Works ul li button{
   color: #000;
   border-bottom: 3px solid var(--bs-emphasis-color);
     }
-  .center a.shin{
+  .center a.new{
     background-color: #00c3da;
     color: #fff;
     padding-block: 0.7rem;
@@ -880,12 +880,23 @@ section.caro .carousel-inner{
   width: 1rem;
   color: #333
 }
-section.caro.carousel-indicators [data-bs-target]{
-  border: 3px solid var(--bs-emphasis-color);
-  width: 0.5rem;
-  height: 0.1rem;
-  color: var(--bs-emphasis-color) !important;
-  background: var(--bs-emphasis-color);}
+section.caro .carousel-indicators [data-bs-target]{
+  border: 3px solid #c0c0c0;
+  height: 0.7rem;
+  width: 0.7rem;
+  color: #c0c0c0 !important;
+  background: #c0c0c0;
+border-radius: 50%;
+
+}
+section.caro .carousel-indicators .active{
+  border: 3px solid #00c3da;
+  color: #00c3da !important;
+  background: #00c3da;
+
+}
+  
+  
 section.caro h3{
   font-weight: 800;
   color: #333333;
@@ -904,12 +915,23 @@ section.caro img{
 #Pricing button span i.bi{
   color: #000 !important;
   font-size: 30px;
+  transition: all 0.5s;
 }
 #Pricing button span i.bi:hover{
   color: #00c3da !important;
+  transform: translateX(10px);
+
+}
+#Pricing button span i.bi-arrow-left:hover{
+  color: #00c3da !important;
+  transform: translateX(-10px);
 
 }
 #Pricing button.carousel-control-prev {
+  height: 5rem;
+  top: 50%;
+}
+#Pricing button.carousel-control-next {
   height: 5rem;
   top: 50%;
 }
@@ -926,20 +948,38 @@ top: 50px;
   height: 25rem;
 }
 /* _______end caro_____ */
+/* info_______________________________________ */
+section.info .container{
+ max-width:98%;
+
+}
+.form input.message{
+  height: 7rem;
+}
+.pop iframe{
+  width: 100%;
+  height: 1000px;
+}
+@media(max-width:991px){
+  section.info .container .pop2{
+    margin: auto;
+  }
+  .pop iframe{
+    height: 500px;
+  }
+  
+}
 
 
 
 
 
-
-
+/* info end________________________________________ */
 
 @media(max-width:991px){
-/* .SERVICES .row{
 
-flex-wrap: wrap !important;
-} */
-.PORTFOLIO .row{
+
+  .PORTFOLIO .row{
   flex-wrap: wrap !important;
 
 }
@@ -991,11 +1031,113 @@ section.PORTFOLIO.show-animate{
   transform: translateY(100px);
 } */
 /* ____6__ */
-/* _______________________clints______________ */
-section#Clients{
-  height: 35rem;
+/* _______________________contact______________ */
+section#Contact{
+  transform: translateY(100px);
+  height: 65rem;
+}
+section.info .form{
+
 }
 
+
+section.info .pop h3[data-bigletter]:before{
+  z-index: -1;
+  content: attr(data-bigletter);
+  font-size: 2em;
+  opacity: .06;
+  position: absolute;
+  top: -0.5em;
+  left: -10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section.info .pop .form input.form-control{
+  height: 50px;
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 50px;
+  border: 2px solid #eee;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+button.new {
+  position: relative;
+  padding: 13px 18px;
+  border-radius: 7px;
+  border: 1px solid #00c3da;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0px;
+  background-color: #00c3da;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button.new:hover {
+  background: #00c3da;
+  color: white;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button.new:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button.new::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button.new:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+/* _________________________info____________ */
 
 
 
