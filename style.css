@@ -132,7 +132,7 @@ ul.navbar-nav .nav-link {
 ul.list-group::after{
   content: "";
   position: absolute;
-  height: 3.7rem;
+  height: 4.9rem;
   width:1px ;
   top: 0;
   right: 21.5%;
@@ -163,6 +163,7 @@ nav.navbar{
   transition: top 0.5s !important;
   display: block;
   border-bottom: 0.5px solid #888888;
+  padding: 18px 0 !important;
 
 }
 section.first-nav a.navbar-brand{
