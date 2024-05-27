@@ -57,3 +57,53 @@ window.addEventListener('scroll', () => {
 });
 // laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaast-------------
 
+function validate(element, regex) {
+    if (element.value.trim() === "") {
+        element.classList.add("is-invalid");
+        element.classList.remove("is-valid");
+    } else if (regex.test(element.value)) {
+        element.classList.add("is-valid");
+        element.classList.remove("is-invalid");
+    } else {
+        element.classList.add("is-invalid");
+        element.classList.remove("is-valid");
+    }
+}
+
+// Event listeners for input validation
+document.getElementById('name').addEventListener('input', function() {
+    validate(this, /.+/);
+});
+
+document.getElementById('email').addEventListener('input', function() {
+    validate(this, /^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+});
+
+document.getElementById('number').addEventListener('input', function() {
+    validate(this, /^\d{10}$/); // Assuming phone number should be 10 digits
+});
+
+document.getElementById('message').addEventListener('input', function() {
+    validate(this, /.+/);
+});
+
+// Form submit event
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    const inputs = document.querySelectorAll('#contactForm .form-control');
+    let formIsValid = true;
+
+    inputs.forEach(input => {
+        const regex = input.id === 'email' ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/ :
+                    input.id === 'number' ? /^\d{10}$/ : /.+/;
+        validate(input, regex);
+
+        if (!input.classList.contains('is-valid')) {
+            formIsValid = false;
+        }
+    });
+
+    if (!formIsValid) {
+        event.preventDefault();
+        alert('Please fill out the form correctly.');
+    }
+});
