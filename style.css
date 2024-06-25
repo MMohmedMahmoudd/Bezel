@@ -285,6 +285,18 @@ h1.second{
   animation-duration: 1s;
 
 }
+@media (max-width:554px) {
+  h1.second{
+    font-size: 3rem;
+  }
+  h1.first{
+    font-size: 3rem;
+  }  
+  .first-text p{
+    max-width: 90%;
+    text-align: center;
+  }
+}
 @keyframes scale{
   0%{
     transform: scale(0.2);
@@ -345,6 +357,7 @@ h1.second{
   animation-duration: 1.1s;
 
 }
+
 .parent-btn{
   position: relative;
   animation-name: scale-opacity;
@@ -1178,6 +1191,12 @@ button.new:active {
 /* ___________________4wit media kda 3alray2_____________*/
 h1, h2, h3, h4, h5, h6, .logo{
   font-family: 'Poppins', sans-serif;
+}
+.rules li{
+  color: #352e28;
+}
+.box-info{
+  width: 100% !important; 
 }
 @media(max-width:991px){
   .About .row.one{
