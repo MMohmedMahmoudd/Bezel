@@ -600,6 +600,21 @@ opacity: 0;
   }
 
 }
+@keyframes scrolldown {
+  0%{
+transform: translateY(0);
+  }
+  30%{
+    opacity: 0.9;
+  }
+  60%{
+    opacity: 0.6;
+  }
+  90%{
+    opacity: 0.3;
+  }
+
+}
 .card.scrolltop{
   animation-name: scrolltop;
   animation-duration: 1s;
@@ -616,14 +631,27 @@ opacity: 0;
 }
 .card{
   border: none;
-  position: relative;
-  animation-duration: 1s;
+  transition: 1s;
 }
-.card.scrolltop{
+.card.one.scrolltop{
   animation-name: scrolltop;
-  animation-duration: 1s;
-
+  animation-duration: 0.2s ;
 }
+.card.two.scrolltop{
+  animation-name: scrolltop;
+  animation-duration: 0.4s ;
+}
+.card.three.scrolltop{
+  animation-name: scrolltop;
+  animation-duration: 0.6s ;
+}
+.card.four.scrolltop{
+  animation-name: scrolltop;
+  animation-duration: 0.8s ;
+}
+/* _________scrolltop end____________ */
+
+
 
 .hidee{
   transform: translateY(100px);
@@ -857,7 +885,6 @@ section.PORTFOLIO{
 .card-parent:hover {
   .hide{
     opacity: 1;
-
   }
   .hide h4{
     transform: translateY(0);
@@ -1025,25 +1052,25 @@ section.PORTFOLIO.show-animate{
 } */
 /* ____2__ */
 section.About.show-animate{
-  transform: translateY(0);
+  transform: translateY(50px);
 }
 section.About{
-  transform: translateY(100px);
+  transform: translateY(200px);
   
 }
 /* ____3__ */
 
-section.SERVICES.show-animate{
-  transform: translateY(0);
+section.Services.show-animate{
+  transform: translateY(70px);
 }
-section.SERVICES{
-  transform: translateY(100px);
+section.Services{
+  transform: translateY(150px);
 }
 /* ____4__ */
 
 section.caro.show-animate{
   transform: translateY(0);
-}
+} 
 section.caro{
   transform: translateY(100px);
 }
@@ -1051,13 +1078,34 @@ section.caro{
 section.PORTFOLIO.show-animate{
   transform: translateY(0);
 }
+section.Pricing {
+  transform: translateY(100px);
+
+}
+section.Pricing.show-animate{
+  transform: translateY(0);
+
+}
+section.info{
+  transform:translateY(300px) !important;
+}
+section.info .show-animate{
+  transform:translateY(0) !important;
+}
+section#Team{
+  transform:translateY(200px) !important;
+}
+section#Team.show-animate{
+  transform:translateY(0) !important;
+  
+}
+
 /* section.PORTFOLIO{
   transform: translateY(100px);
 } */
 /* ____6__ */
 /* _______________________contact______________ */
 section#Contact{
-  transform: translateY(100px);
   height: 65rem;
 }
 section.info .form{
